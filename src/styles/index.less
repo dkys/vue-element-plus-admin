@@ -1,7 +1,39 @@
 @import './var.css';
 @import 'element-plus/theme-chalk/dark/css-vars.css';
+@import 'element-plus/theme-chalk/el-dialog.css';
 
 // 解决抽屉弹出时，body宽度变化的问题
 .el-popup-parent--hidden {
   width: 100% !important;
+}
+
+// 解决dialog自适应
+
+@media screen and (max-width: @screen-sm) {
+  .el-dialog {
+    --el-dialog-width: 100% !important;
+  }
+}
+@media screen and (max-width: @screen-md) {
+  .el-dialog {
+    --el-dialog-width: 90% !important;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .el-dialog {
+    --el-dialog-width: 80% !important;
+  }
+}
+
+@media screen and (min-width: @screen-lg) {
+  .el-dialog {
+    --el-dialog-width: 60% !important;
+  }
+}
+
+@media screen and (min-width: @screen-xl) {
+  .el-dialog {
+    --el-dialog-width: 60% !important;
+  }
 }
