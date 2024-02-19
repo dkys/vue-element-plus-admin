@@ -14,19 +14,13 @@
     --el-dialog-width: 100% !important;
   }
 }
-@media screen and (max-width: @screen-md) {
+@media screen and (min-width: @screen-sm) and (max-width: @screen-md) {
   .el-dialog {
     --el-dialog-width: 90% !important;
   }
 }
 
-@media screen and (max-width: @screen-lg) {
-  .el-dialog {
-    --el-dialog-width: 80% !important;
-  }
-}
-
-@media screen and (min-width: @screen-lg) {
+@media screen and (min-width: @screen-md) and (max-width: @screen-lg) {
   .el-dialog {
     --el-dialog-width: 60% !important;
   }
@@ -34,6 +28,6 @@
 
 @media screen and (min-width: @screen-xl) {
   .el-dialog {
-    --el-dialog-width: 60% !important;
+    --el-dialog-width: 50% !important;
   }
 }
